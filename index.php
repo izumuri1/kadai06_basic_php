@@ -24,7 +24,7 @@
         <!-- div：Any ideas?（今度何する？） -->
         <div class="anyIdeas">
             <!-- ここに、今度何するの入力フォームを作成 -->
-            <p style="font-size:x-small">あたなは何月頃に誰と何をしたいですか</p>
+            <p style="font-size:12px">いつ誰と何をしたい</p>
             <form action="anyIdeasSave.php" class="" id="" method="post">
                 <div class="inputBlk">
                     <input type="month" name="whenToDo">

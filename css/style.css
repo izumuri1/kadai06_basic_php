@@ -20,7 +20,7 @@ header {
 h1 {
   text-align: center;
   margin: 0;
-  font-size: 20px;
+  font-size: 28px;
   font-family: "Montserrat", sans-serif;
   font-style:italic;
   padding-top: 10px;
@@ -33,8 +33,10 @@ h2 {
 
 footer {
   text-align: center;
-  margin: 10px 0;
-  font-size: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 8px;
+  background-color: #f4c14e;
 }
 
 input {
@@ -43,7 +45,7 @@ input {
   display: block;
   margin: 0 auto 5px;
   box-shadow: 3px 1px 1px rgba(128, 128, 128, 0.368);
-  font-size: 12px;
+  font-size: 16px;
   /* background-color: floralwhite; */
   background-color: #EEF6FF;
   border: none;
@@ -52,7 +54,7 @@ input {
 label {
   width: 100%;
   margin: 0 auto 5px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 textarea {
@@ -64,7 +66,7 @@ textarea {
   resize: none;
   background-color:floralwhite;
   box-shadow: 3px 1px 1px rgba(128, 128, 128, 0.368);
-  font-size: 12px;
+  font-size: 16px;
   border:none;
 }
 
@@ -73,7 +75,7 @@ button {
   height: 25px;
   margin: 0 auto 10px;
   display: block;
-  font-size: 12px;
+  font-size: 18px;
   background-color: whitesmoke;
   border-radius: 4px;
   box-shadow: 3px 1px 1px rgba(128, 128, 128, 0.368);
@@ -109,12 +111,12 @@ button:hover {
 
 .anyIdeas {
   border-top: bla;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .ourIdeas {
   border-top: 1px solid white;
-  margin-top: 5px;
+  margin-top: 10px;
   height: 150px;
   overflow-y: auto;
   padding-left: 10px;
@@ -123,7 +125,7 @@ button:hover {
 
 .ideasThinking {
   border-top: 1px solid white;
-  margin-top: 5px;
+  margin-top: 10px;
   height: 100px;
   padding-left: 10px;
   padding-right: 10px;
@@ -131,7 +133,7 @@ button:hover {
 
 .ideasTried {
   border-top: 1px solid white;
-  margin-top: 5px;
+  margin-top: 10px;
   height: 100px;
   padding-left: 10px;
   padding-right: 10px;
@@ -142,5 +144,24 @@ button:hover {
 }
 
 table {
-  font-size: 10px;
+  font-size: 12px;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate; 
+  background-color: white;
+}
+
+th,td {
+  padding: 3px;
+  border-bottom: thin solid gray;
+}
+
+th {
+  font-weight: normal;
+}
+
+td {
+  white-space: nowrap;      /* 改行せずに1行で表示 */
+  overflow: hidden;         /* はみ出た部分を非表示に */
+  text-overflow: ellipsis;  /* はみ出た部分に「…」を表示（任意） */
 }
