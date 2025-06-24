@@ -1,7 +1,6 @@
 <?php
 // ◆anyIdeasデータのindex.phpへの表示：data.txtのanyIdeasデータを読み込み、JSON形式で返す（APIエンドポイント）
 
-
 $data = [];
 // ファイルが存在したら、処理する
 if (file_exists('data/data.txt')) {

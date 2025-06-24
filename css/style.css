@@ -31,6 +31,11 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
+p {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
 footer {
   text-align: center;
   margin-top: 10px;
@@ -46,15 +51,17 @@ input {
   margin: 0 auto 5px;
   box-shadow: 3px 1px 1px rgba(128, 128, 128, 0.368);
   font-size: 16px;
+  font-family: sans-serif;
   /* background-color: floralwhite; */
-  background-color: #EEF6FF;
-  border: none;
+  background-color: #bad7f8;;
+  border: 1px solid white;
 }
 
 label {
   width: 100%;
   margin: 0 auto 5px;
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 textarea {
@@ -67,6 +74,7 @@ textarea {
   background-color:floralwhite;
   box-shadow: 3px 1px 1px rgba(128, 128, 128, 0.368);
   font-size: 16px;
+  font-family: sans-serif;
   border:none;
 }
 
@@ -76,6 +84,7 @@ button {
   margin: 0 auto 10px;
   display: block;
   font-size: 18px;
+  font-family: sans-serif;
   background-color: whitesmoke;
   border-radius: 4px;
   box-shadow: 3px 1px 1px rgba(128, 128, 128, 0.368);
@@ -97,9 +106,12 @@ button:hover {
 }
 
 .inputBtn {
-  width: 33%;
+  width: 66%;
   font-weight: bold;
   margin: 0 auto;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: black;
 }
 
 .sticky {
@@ -141,10 +153,12 @@ button:hover {
 
 .ourIdeas-wrapper {
   font-size: 10px;
+  font-family: sans-serif;
 }
 
 table {
-  font-size: 12px;
+  font-size: 16px;
+  font-family: sans-serif;
   width: 100%;
   table-layout: fixed;
   border-collapse: separate; 

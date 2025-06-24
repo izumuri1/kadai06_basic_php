@@ -1,5 +1,5 @@
 <?php
-// index.phpの入力フォーム（anyIdeas）から送信されたデータを受け取って処理
+// ◆index.phpの入力フォーム（anyIdeas）から送信されたデータを受け取ってテキストファイルへ保存
 $whenToDo = $_POST['whenToDo'];
 $whoWith = $_POST['whoWith'];
 $whatToDo = $_POST['whatToDo'];
