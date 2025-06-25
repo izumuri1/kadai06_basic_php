@@ -16,7 +16,7 @@ async function fetchIdeas() {
         const data = await response.json();
         // クラス名がourIdeasのDOM要素を取得し、ourIdeasに代入➡ourIdeas.innerHTML = html;で動的に生成したhtmlをourIdeasに代入する
         const ourIdeas = document.querySelector('.ourIdeas');
-        let html = '<h2>Our ideas</h2><div class="ourIdeas-wrapper">';
+        let html = '<div class="ourIdeas-wrapper">';
         // dataに中身があれば、処理する
         if (data.length > 0) {
             html += '<table class="ourIdeas-table">';

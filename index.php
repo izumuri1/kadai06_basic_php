@@ -40,19 +40,20 @@
         </div>
 
         <!-- div：Our ideas（やりたいことリスト） -->
+        <h2>Our ideas</h2>
         <div class="ourIdeas">
             <!-- ここに、JavaScriptで動的にanyIdeasを表示 -->
         </div>
 
         <!-- div：Ideas we're thinking about（計画中リスト） -->
+        <h2>Ideas we're thinking about</h2>
         <div class="ideasThinking">
-            <h2>Ideas we're thinking about</h2>
             <!-- ここに、ユーザー自身で、やりたいことリストからやりたいことをドラッグアンドドロップで入れ込む -->
         </div>
 
         <!-- div：Ideas we're tried（実施済みリスト） -->
+        <h2>Ideas we're tried</h2>
         <div class="ideasTried">
-            <h2>Ideas we're tried</h2>
             <!-- ここに、ユーザー自身で、計画中リストから実施したことをドラッグアンドドロップで入れ込む -->
         </div>
 
