@@ -24,6 +24,7 @@ async function fetchIdeas() {
             html += '<tbody>';
             // dataの各要素を仮引数のentryとして、繰り返し処理
             data.forEach(entry => {
+                // テンプレートリテラル（`・・・`）を活用
                 html += `<tr class="ourIdeasTr">
                     <td>${entry.whenToDo}</td>
                     <td>${entry.whoWith}</td>
