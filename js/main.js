@@ -1,4 +1,4 @@
-// ◆ anyIdeasDisplay.phpからJSONデータを取得し、ourIdeas内にテーブルを動的に生成
+// ◆◆◆ anyIdeasDisplay.phpからJSONデータを取得し、ourIdeas内にテーブルを動的に生成
 
 async function fetchIdeas() {
     // このブロック内でエラーが発生した場合、catchで処理する

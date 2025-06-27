@@ -24,6 +24,7 @@
         <!-- div：Any ideas?（今度何する？） -->
         <div class="anyIdeas">
             <!-- ここに、今度何するの入力フォームを作成 -->
+            <!-- ◆◆◆入力した情報が「anyIdeasSave.php」へ送信（POST）される -->
             <p>いつ誰と何をしたい</p>
             <form action="anyIdeasSave.php" class="" id="" method="post">
                 <div class="inputBlk">

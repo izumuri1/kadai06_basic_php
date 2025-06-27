@@ -1,6 +1,8 @@
 <?php
-// ◆anyIdeasデータのindex.phpへの表示：data.txtのanyIdeasデータを読み込み、JSON形式で返す（APIエンドポイント）
+// ◆◆◆anyIdeasデータのindex.phpへの表示：data.txtのanyIdeasデータを読み込み、JSON形式で返す（APIエンドポイント）
 
+// $dataにdata.txtのデータを配列オブジェクトとして繰り返し処理で格納していく
+// 格納のための箱を初期化
 $data = [];
 // ファイルが存在したら、処理する
 if (file_exists('data/data.txt')) {
@@ -10,7 +12,7 @@ if (file_exists('data/data.txt')) {
     foreach ($lines as $line) {
         // 組込関数（explode）で$lineをカンマで分割し、構文（list）で配列各要素を変数に一括代入する
         list($time, $whenToDo, $whoWith, $whatToDo) = explode(',', $line);
-        // $dataに$line1行ごと、カンマで区切ったデータを格納
+        // 初期化済みの$data[]（★[]がないと、最後の1件しか格納されない！！！）に$line1行ごと、カンマで区切ったデータを格納
         $data[] = [
             'time' => $time,
             'whenToDo' => $whenToDo,
@@ -25,10 +27,10 @@ if (file_exists('data/data.txt')) {
     usort($data, fn($a, $b) => strcmp($a['whenToDo'], $b['whenToDo']));
 }
 
-// ◆ PHPを簡易的なJSON APIとして使えるようにするコード
+// PHPを簡易的なJSON APIとして使えるようにするコード
 // PHPが出力するデータの種類を「JSON形式です」とブラウザやクライアントに伝えるための宣言
 header('Content-Type: application/json');
-// PHPの配列やオブジェクトをJSON形式の文字列に変換して出力する➡json_encode($data) をブラウザやAPIのレスポンスとして返す
+// ◆◆◆PHPの配列やオブジェクトをJSON形式の文字列に変換して出力する➡json_encode($data) をブラウザやAPIのレスポンスとして返す
 echo json_encode($data);
 
 
