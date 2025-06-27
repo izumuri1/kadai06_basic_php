@@ -20,7 +20,7 @@ async function fetchIdeas() {
         // dataに中身があれば、処理する
         if (data.length > 0) {
             html += '<table class="ourIdeas-table">';
-            html += '<thead><tr><th>いつ</th><th>誰と</th><th>何をしたい</th></tr></thead>';
+            html += '<thead><tr><th class="tableSticky">いつ</th><th class="tableSticky">誰と</th><th class="tableSticky">何をしたい</th></tr></thead>';
             html += '<tbody>';
             // dataの各要素を仮引数のentryとして、繰り返し処理
             data.forEach(entry => {

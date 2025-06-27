@@ -92,6 +92,14 @@ label {
   margin: 0; /* 念のため */
 }
 
+.tableSticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0; /* 念のため */
+  background-color: white;
+}
+
 .anyIdeas {
   border-top: bla;
   margin-top: 10px;
@@ -100,8 +108,6 @@ label {
 .ourIdeas {
   border-top: 1px solid white;
   margin-top: 10px;
-  height: 150px;
-  overflow-y: auto;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -125,6 +131,8 @@ label {
 .ourIdeas-wrapper {
   font-size: 10px;
   font-family: sans-serif;
+  height: 150px;
+  overflow-y: auto;
 }
 
 table {
